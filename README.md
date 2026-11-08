@@ -2,16 +2,27 @@
 
 Bilgisayar Mühendisi · CBS yazılım geliştirici · Sakarya
 
-2013'ten beri kamuda **coğrafi bilgi sistemleri (CBS)** yazılımları geliştiriyorum: Silverlight ve JavaScript ile başlayan yol, bugün baştan sona kendi geliştirdiğim bir kurumsal CBS platformuna ve ona bağlı yapay zekâ özelliklerine dönüştü. Yan projelerimde Türkçe için açık, yerelde çalışan ses teknolojileri geliştiriyorum ve Türkiye'nin ulusal yapay zekâ platformu **EVREN**'e gönüllü olarak açık veri ve model katkısı yapıyorum.
+2013'ten beri kamuda **coğrafi bilgi sistemleri (CBS)** yazılımları geliştiriyorum. Kendi zamanımda açık kaynak araçlar üretiyorum: harita verisini yapay zekâya güvenle açan araçlar, Türkçe için ölçüm setleri ve herkesin tarayıcıda kullanabileceği kamu yararı araçları.
 
-## Odak
+## CBS + yapay zekâ
 
-- **Kurumsal CBS platformu** (2023–): web harita portalı (12 widget, 10 yerleşik CBS aracı), servis yönetim paneli ve OGC uyumlu harita/feature sunucusu; bağlı servis, rapor ve laboratuvar uygulamaları. *Kurum içi yazılım, kaynak kodu açık değil.*
-- **Yapay zekâ entegrasyonu:** sohbetle harita ve widget üretimi, Türkçe harita komutlarını anlama, yönetim asistanı; yerli (EVREN) ve yerel LLM'ler.
-- **Meridian:** WebGPU tabanlı 3B dünya ve harita motoru (geliştirme aşamasında).
-- **GeoStudio:** yapay zekâ destekli masaüstü CBS editörü (erken aşama).
+| Proje | Ne yapar |
+|---|---|
+| [mapsql-mcp](https://github.com/mveyseldelibas/mapsql-mcp) | PostGIS ve Oracle Spatial için güvenli MCP sunucusu: yapay zekâ asistanı veritabanını salt okunur sorgular, sonucu haritayla anlatır. `uvx mapsql-mcp` |
+| [TR-CBS-Komut](https://huggingface.co/datasets/mvdelibas/tr-cbs-komut) | Türkçe harita komutlarını anlama için açık değerlendirme seti (11,7 bin örnek) · [ölçüm tablosu](https://huggingface.co/spaces/mvdelibas/tr-cbs-olcum) |
+| [Trafik levhası demosu](https://huggingface.co/spaces/mvdelibas/turk-trafik-levha-demo) | Türkiye trafik levhalarını tanıyan model, tarayıcıda |
 
-## Açık kaynak: [seslen-tr](https://github.com/seslen-tr) — Türkçe ses sentezi
+## Kamu yararı araçları
+
+Üçü de tarayıcıda çalışır; yazdığınız metin bir sunucuya gitmez.
+
+| Araç | Ne yapar |
+|---|---|
+| [KVKK Maske](https://huggingface.co/spaces/mvdelibas/kvkk-maske) | Ad, T.C. kimlik, IBAN, telefon ve adresi yapay zekâya göndermeden önce maskeler, cevapta geri açar |
+| [Mevzuat Arama](https://huggingface.co/spaces/mvdelibas/tr-mevzuat-arama) | 1,19 milyon mevzuat ve Resmî Gazete paragrafında arama, her sonuçta resmî metnin bağlantısı |
+| [Erişilebilirlik Denetleyici](https://huggingface.co/spaces/mvdelibas/erisilebilirlik-denetleyici) | HTML'deki erişilebilirlik sorunlarını WCAG maddesi ve çözüm önerisiyle Türkçe gösterir |
+
+## Türkçe ses: [seslen-tr](https://github.com/seslen-tr)
 
 | Proje | Ne yapar | Kurulum |
 |---|---|---|
@@ -22,18 +33,14 @@ Bilgisayar Mühendisi · CBS yazılım geliştirici · Sakarya
 | [turkce-duygu](https://github.com/seslen-tr/turkce-duygu) · [turkce-uslup](https://github.com/seslen-tr/turkce-uslup) | Cümle tonu ve metin üslubu seçimi | `pip install turkce-duygu turkce-uslup` |
 | [turkce-plbert](https://github.com/seslen-tr/turkce-plbert) | Türkçe PL-BERT fonem dil modeli | — |
 
-Modeller: [huggingface.co/seslen-tr](https://huggingface.co/seslen-tr) · Kod MIT lisanslı.
+Kod MIT, model ağırlıkları CC BY-SA 4.0 · Modeller: [huggingface.co/seslen-tr](https://huggingface.co/seslen-tr)
 
 ## EVREN (gönüllü)
 
-[EVREN profilim](https://evren.ssyz.org.tr/users/u43bd0650c87e): 24 açık veri seti (3,7 milyon+ öğe) ve 31 model; katkı sıralamasında ilk 5.
-
-- Türkçe Açık Külliyat: 2,8 milyon paragraf (Vikipedi, Vikikaynak, Vikihaber, Tatoeba, yürürlükteki mevzuat)
-- ~128 saatlik gerçek Türkçe konuşma verisi
-- Türkçe LLM değerlendirme setleri: TR-Mevzuat-SC (21 bin soru), TR-CBS-Komut (10 bin örnek)
+Türkiye'nin ulusal yapay zekâ platformu [EVREN](https://evren.ssyz.org.tr/users/u43bd0650c87e)'e 24 açık veri seti ve 31 model katkısı: Türkçe LLM değerlendirme setleri (TR-CBS-Komut, TR-Mevzuat-SC), Türkiye'ye özgü coğrafi görüntü setleri, Türkçe Açık Külliyat ve ~128 saatlik gerçek Türkçe konuşma verisi.
 
 ## Teknolojiler
 
-TypeScript · Next.js · NestJS · Node.js · Python · MongoDB · PostgreSQL/PostGIS · Oracle Spatial · ArcGIS Enterprise · Leaflet · WebGPU · ONNX
+TypeScript · Node.js · Python · PostgreSQL/PostGIS · Oracle Spatial · Leaflet · WebGPU · ONNX · MCP
 
-[LinkedIn](https://www.linkedin.com/in/mveyseldelibas) · [Hugging Face](https://huggingface.co/mvdelibas) · [EVREN](https://evren.ssyz.org.tr/users/u43bd0650c87e)
+[LinkedIn](https://www.linkedin.com/in/mveyseldelibas) · [Hugging Face](https://huggingface.co/mvdelibas)
