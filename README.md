@@ -9,6 +9,7 @@ Bilgisayar Mühendisi · CBS yazılım geliştirici · Sakarya
 | Proje | Ne yapar |
 |---|---|
 | [mapsql-mcp](https://github.com/mveyseldelibas/mapsql-mcp) | PostGIS ve Oracle Spatial için güvenli MCP sunucusu: yapay zekâ asistanı veritabanını salt okunur sorgular, sonucu haritayla anlatır. `uvx mapsql-mcp` |
+| [turkce-adres](https://github.com/mveyseldelibas/turkce-adres) | Dağınık Türkçe adresleri ayrıştırır ve düzeltir; 66 bin mahalle ve köyle doğrular, internetsiz yaklaşık konum verir, tekrarları bulur, KVKK için genelleştirir. `pip install turkce-adres` |
 | [TR-CBS-Komut](https://huggingface.co/datasets/mvdelibas/tr-cbs-komut) | Türkçe harita komutlarını anlama için açık değerlendirme seti (11,7 bin örnek) · [ölçüm tablosu](https://huggingface.co/spaces/mvdelibas/tr-cbs-olcum) |
 | [Trafik levhası demosu](https://huggingface.co/spaces/mvdelibas/turk-trafik-levha-demo) | Türkiye trafik levhalarını tanıyan model, tarayıcıda |
 
