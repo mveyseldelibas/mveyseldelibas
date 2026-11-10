@@ -13,6 +13,18 @@ Bilgisayar Mühendisi · CBS yazılım geliştirici · Sakarya
 | [TR-CBS-Komut](https://huggingface.co/datasets/mvdelibas/tr-cbs-komut) | Türkçe harita komutlarını anlama için açık değerlendirme seti (11,7 bin örnek) · [ölçüm tablosu](https://huggingface.co/spaces/mvdelibas/tr-cbs-olcum) |
 | [Trafik levhası demosu](https://huggingface.co/spaces/mvdelibas/turk-trafik-levha-demo) | Türkiye trafik levhalarını tanıyan model, tarayıcıda |
 
+## Hugging Face'te açık modeller ve veri setleri
+
+4 model, 18 veri seti ve 8 tarayıcı demosu: [huggingface.co/mvdelibas](https://huggingface.co/mvdelibas). Konulara göre:
+
+| Koleksiyon | İçinde |
+|---|---|
+| [Türkiye CBS ve coğrafi yapay zekâ](https://huggingface.co/collections/mvdelibas/turkish-gis-and-geospatial-ai-6af0d91a87f725ebce84965b) | Trafik levhası, araç-yaya, bina ve uydu tesis tespit modelleri; adres ve harita komutu setleri |
+| [LiDAR nDSM ve bina yüksekliği](https://huggingface.co/collections/mvdelibas/lidar-ndsm-and-building-height-6af3915d716ed5b858c73a6b) | Hollanda AHN4 gerçek ve 81 il sentetik nDSM karoları, bina envanteri |
+| [Robot görme ve Türkçe robot komutları](https://huggingface.co/collections/mvdelibas/robot-vision-sim-and-turkish-robot-commands-6af3915e6ed8c7bb928e07a1) | Simülasyon bölütleme, yönlü kutu ve anahtar nokta setleri; gerçek fotoğraf test seti |
+| [Ay/Mars gezgini ve gökyüzü taraması](https://huggingface.co/collections/mvdelibas/lunar-mars-rover-and-sky-survey-synthetic-6af39160abd9b1da269411b1) | Gezgin tehlike bölütleme ve yol planlama; uydu izi ve hareketli cisim setleri |
+| [Türkçe dil modeli sınamaları](https://huggingface.co/collections/mvdelibas/turkish-llm-benchmarks-6af39161f9a91556f5398122) | Harita komutu, netleştirme sorusu, mevzuat soru-cevap, robot talimatı |
+
 ## Kamu yararı araçları
 
 Üçü de tarayıcıda çalışır; yazdığınız metin bir sunucuya gitmez.
